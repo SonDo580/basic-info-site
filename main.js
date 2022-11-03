@@ -13,14 +13,14 @@ http
       res.end();
     };
 
-    // if (req.url === "/contact") {
-    //   fs.readFile("./contact.html", displayPage);
-    // }
+    if (req.url === "/contact") {
+      fs.readFile("./contact.html", displayPage);
+    }
 
-    // if (req.url === "/about") {
-    //   fs.readFile("./about.html", displayPage);
-    // }
+    if (req.url === "/about") {
+      fs.readFile("./about.html", displayPage);
+    }
 
-    // fs.readFile("./index.html", displayPage);
+    fs.readFile("./index.html", displayPage);
   })
   .listen(8080);
